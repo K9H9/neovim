@@ -15,7 +15,7 @@ return {
   ['testaustime/testaustime.nvim'] = {
     requires = { 'nvim-lua/plenary.nvim' },
     config = function()
-      require("custom.pluginss.testaustime")
+      require("custom.plugins.testaustime")
     end
   },
 }
