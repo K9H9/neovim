@@ -2,8 +2,9 @@
 --
 local M = {}
 
+-- Theme switching integration with AwesomeWM 
 M.ui = {
-  theme = "nord",
+  theme = require("custom.theme"),
 }
 M.plugins = require "custom.plugins"
 
