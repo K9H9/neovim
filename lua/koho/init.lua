@@ -32,6 +32,13 @@ autocmd({"BufWritePre"}, {
 
 
 
+
+autocmd("BufWritePre", {
+  pattern = "*.rs",
+  callback = function()
+    vim.cmd("silent! :!cargo fmt")
+  end,
+})
 autocmd('LspAttach', {
     group = myg,
     callback = function(e)
